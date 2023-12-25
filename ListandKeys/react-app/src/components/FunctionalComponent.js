@@ -18,7 +18,8 @@ export default function FunctionalComponent() {
 
    // const names = ['John', 'Paul', 'George', 'Ringo'];
    const personList = persons.map(person => 
-       <Person person={person} />)
+    <Person key={person.name} person={person} />
+    )
   return (
     <div>
        {personList}
